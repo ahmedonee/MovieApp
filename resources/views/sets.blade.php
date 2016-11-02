@@ -24,7 +24,7 @@
 
 <!-- Button trigger modal -->
  <div class="box box-danger">
-        <div class="box-header with-border">Add new User</div>
+        <div class="box-header with-border">Add new Set</div>
         <div class="box-body">
              <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#myModal">
                  Add New Set
