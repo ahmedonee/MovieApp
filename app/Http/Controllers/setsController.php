@@ -59,8 +59,8 @@ class setsController extends Controller
         if (Input::hasFile('img')) {
             $img    = Input::file('img');
             $filename = time().'.'.$img->getClientOriginalExtension();
-            $path     = public_path('profilepics/'.$filename);
-            Image::make($image->getRealPath())->resize(120, 120)->save($path);
+            $path     = public_path('imgs/'.$filename);
+            Image::make($img->getRealPath())->resize(120, 120)->save($path);
             $user->img = $filename;
         }
         $user->save();
